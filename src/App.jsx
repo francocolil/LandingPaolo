@@ -8,6 +8,7 @@ import ContainerCard from "./Components/ContainerCard";
 import ImagenFixed2 from "./Components/ImagenFixed2";
 import Image from "./Components/Image";
 import Redes from "./Components/Redes";
+import Contacto from "./Components/Contacto";
 
 function Home() {
   return (
@@ -31,6 +32,8 @@ function Home() {
       <Image />
 
       <Redes />
+
+      <Contacto />
     </>
   );
 }

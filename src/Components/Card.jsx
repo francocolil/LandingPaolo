@@ -41,7 +41,6 @@ const cards = [
 
 function Card() {
   const [cartas, setCartas] = useState(cards);
-  console.log(cartas);
   return (
     <>
       {cartas.map(({ title, id, content, image }) => {
