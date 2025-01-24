@@ -1,0 +1,53 @@
+.fondo-imagen {
+  background-image: url("/Background4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20rem;
+  margin-top: 1rem;
+}
+
+.container-texto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-fixed {
+  color: white;
+  font-size: 4em;
+  padding-top: 4rem;
+  font-weight: bold;
+}
+
+.parrf-fixed {
+  color: white;
+  font-size: 2em;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1250px) {
+  .fondo-imagen {
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    height: 20rem;
+  }
+
+  .title-fixed {
+    color: white;
+    font-size: 2em;
+    padding-top: 4rem;
+    text-align: center;
+  }
+
+  .parrf-fixed {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

@@ -1,0 +1,144 @@
+/** TIPO GRAFIA */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;1,500&family=Edu+AU+VIC+WA+NT+Hand&family=Lora:ital,wght@0,400..700;1,400..700&family=Merienda&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Oswald:wght@200..700&family=Playwrite+GB+S+Guides:ital@0;1&family=Sankofa+Display&display=swap");
+
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-size: 100%;
+  /* font-family: "Merienda", serif; */
+  font-family: "Cormorant", serif;
+}
+
+/* Evitamos problemas con los SVG */
+/* svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+} */
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: black;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+.main-footer {
+  margin-top: 2rem;
+  height: 7rem;
+  background-color: black;
+  height: auto;
+  width: 100%;
+}
+
+.section-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1.2rem;
+}
+
+.imagen-ssl {
+  width: 1rem;
+  height: 1rem;
+}
+
+.h1-footer {
+  color: white;
+  font-size: 1.2em;
+}
+
+.h2-footer {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.h3-footer {
+  color: white;
+  text-align: center;
+  font-size: smaller;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .main-footer {
+    width: auto;
+  }
+}

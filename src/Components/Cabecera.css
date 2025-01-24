@@ -1,0 +1,98 @@
+.Cabecera {
+  width: 100%;
+  backdrop-filter: blur(5px);
+  padding: 1em;
+  background-color: #fffaf0;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.Cabecera-h1 {
+  font-size: 1.5em;
+  color: black;
+  padding-left: 4rem;
+}
+
+.Cabecera-a {
+  font-size: 1.3em;
+  color: black;
+}
+.Cabecera-button {
+  display: none;
+  cursor: pointer;
+}
+.Cabecera-svg {
+  width: 2em;
+  height: 2em;
+  fill: black;
+}
+
+.Cabecera-ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 4rem;
+}
+
+.Cabecera-li {
+  margin: 0 0.5em;
+}
+
+@media screen and (max-width: 480px) {
+  .Cabecera-h1 {
+    font-size: 1.5em;
+    color: black;
+    padding-left: 0;
+  }
+
+  .Cabecera-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .Cabecera-button {
+    display: flex;
+  }
+  .Cabecera-nav {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  .Cabecera-nav.isActive {
+    height: 50vh;
+    opacity: 1;
+  }
+  .Cabecera-ul {
+    flex-direction: column;
+  }
+  .Cabecera-li {
+    margin: 0.5em 0;
+  }
+
+  .li-movimiento {
+    animation: EntradaIz 0.8s ease;
+  }
+
+  @keyframes EntradaIz {
+    from {
+      transform: translateX(-200%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+}

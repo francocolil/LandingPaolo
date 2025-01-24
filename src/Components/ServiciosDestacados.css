@@ -1,0 +1,90 @@
+.container-servicios {
+  background-color: white;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  display: flex;
+}
+
+.seccion-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articulo-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  animation: EntrarDesdeIzquierda 0.9s ease;
+}
+
+.title-servicios-precio {
+  padding-bottom: 0.5rem;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.parrafo-servicio-precio {
+  font-size: 1.5em;
+  line-height: 2em;
+  font-weight: bolder;
+}
+
+.div-container-image {
+  padding-right: 13rem;
+  animation: EntrarDesdeIzquierda 0.8s ease;
+}
+
+@media (max-width: 1276px) {
+  .div-container-image {
+    padding-right: 0;
+  }
+
+  .container-servicios {
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articulo-servicios {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .title-servicios-precio {
+    font-size: 3em;
+  }
+
+  .parrafo-servicio-precio {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  .div-container-image {
+    padding-right: 0;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-servicios {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .div-container-image {
+    padding-left: 0;
+  }
+}
+
+.imagen-precios {
+  width: 100%;
+}

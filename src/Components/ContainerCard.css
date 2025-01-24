@@ -1,0 +1,53 @@
+.contenedor {
+  margin-bottom: 2rem;
+}
+
+.title-section-2 {
+  color: black;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 0.6rem;
+}
+.section-2 {
+  min-height: 20rem;
+  margin-top: 1rem;
+  margin-right: 22rem;
+  margin-left: 22rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+@media (max-width: 700px) {
+  .title-section-2 {
+    color: black;
+    text-align: center;
+    margin-top: 0;
+    font-size: 3em;
+  }
+
+  .section-2 {
+    min-height: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title-section-2 {
+    color: black;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 3em;
+  }
+
+  .section-2 {
+    min-height: 20rem;
+    margin-top: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+  }
+}
