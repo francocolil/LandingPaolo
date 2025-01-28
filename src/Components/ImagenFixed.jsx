@@ -2,10 +2,10 @@ import "./ImagenFixed.css";
 
 function ImagenFixed() {
   return (
-    <div class="fondo-imagen">
-      <div class="container-texto">
-        <h1 class="title-fixed">Tu estilista de confianza</h1>
-        <p class="parrf-fixed">
+    <div className="fondo-imagen">
+      <div className="container-texto">
+        <h1 className="title-fixed">Tu estilista de confianza</h1>
+        <p className="parrf-fixed">
           Siéntete especial con una asesoría personalizada de Paolo. Él te
           ayudará a encontrar el look perfecto para cualquier ocasión.
         </p>

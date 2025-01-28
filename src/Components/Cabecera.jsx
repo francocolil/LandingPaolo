@@ -21,7 +21,7 @@ const Cabecera = () => {
     <header className="Cabecera">
       <h1 className="Cabecera-h1">
         <a href="#" className="Cabecera-a">
-          Suscríbete
+          Paolo Style
         </a>
       </h1>
 

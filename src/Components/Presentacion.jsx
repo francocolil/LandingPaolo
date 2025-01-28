@@ -14,12 +14,12 @@ function Presentacion() {
   return (
     <section
       id="Presentacion"
-      class="container-servicios"
+      className="container-servicios"
       data-aos="flip-right"
     >
-      <article class="articulo-servicios">
-        <h1 class="title-servicios-precio">Paolo....</h1>
-        <p class="parrafo-servicio-precio">
+      <article className="articulo-servicios">
+        <h1 className="title-servicios-precio">Paolo....</h1>
+        <p className="parrafo-servicio-precio">
           Un Diseñador Capilar y Asesor de Imagen enfocado en servicios de lujo
           combina creatividad y técnica para ofrecer transformaciones
           personalizadas que destacan la belleza única de cada cliente.
@@ -30,8 +30,8 @@ function Presentacion() {
           capilar y asesoramiento de imagen premium.
         </p>
       </article>
-      <div class="div-container-image">
-        <img class="imagen-perfil" src="/Perfil.jpg" alt="" />
+      <div className="div-container-image">
+        <img className="imagen-perfil" src="/Perfil.jpg" alt="" />
       </div>
     </section>
   );

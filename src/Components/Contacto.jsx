@@ -5,6 +5,11 @@ import "./Contacto.css";
 function Contacto() {
   const form = useRef();
 
+  const namelinput = useRef();
+  const emaillinput = useRef();
+  const messagelinput = useRef();
+  const inputsub = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -15,6 +20,7 @@ function Contacto() {
       .then(
         () => {
           console.log("Correo Enviado!!!");
+          inputsub.current.disabled = true;
           form.current.reset();
         },
         (error) => {
@@ -22,6 +28,25 @@ function Contacto() {
         }
       );
   };
+
+  function inputtitle() {
+    namelinput.current.focus();
+  }
+
+  function inputemail() {
+    emaillinput.current.focus();
+  }
+
+  function inputmessage() {
+    messagelinput.current.focus();
+  }
+
+  function InputSumbitt() {
+    const inputref = inputsub.current;
+
+    inputref.style.backgroundColor = "#4dabf7";
+    inputref.value = "Correo Enviado";
+  }
 
   return (
     <div id="contacto-paolo" className="container-form">
@@ -79,7 +104,9 @@ function Contacto() {
       </div>
 
       <form ref={form} onSubmit={sendEmail} className="forms-inputs">
-        <label className="name-title">Name</label>
+        <label className="name-title" onClick={inputtitle}>
+          Name
+        </label>
         <input
           type="text"
           name="user_name"
@@ -87,9 +114,12 @@ function Contacto() {
           className="campo"
           required
           minLength={4}
+          ref={namelinput}
         />
 
-        <label className="email-title">Email</label>
+        <label className="email-title" onClick={inputemail}>
+          Email
+        </label>
         <input
           type="email"
           name="user_email"
@@ -97,17 +127,26 @@ function Contacto() {
           className="campo"
           required
           minLength={10}
+          ref={emaillinput}
         />
 
-        <label className="message-title">Mensaje</label>
+        <label className="message-title" onClick={inputmessage}>
+          Mensaje
+        </label>
         <textarea
           name="message"
           placeholder="Ingrese el Mensaje a Enviar"
           required
+          ref={messagelinput}
         />
 
-        <div className="container-btn">
-          <input type="submit" value="Enviar Correo" className="btn-enviar" />
+        <div className="container-btn" onClick={InputSumbitt}>
+          <input
+            type="submit"
+            value="Enviar Correo"
+            className="btn-enviar"
+            ref={inputsub}
+          />
         </div>
       </form>
     </div>

@@ -13,20 +13,24 @@ function ServiciosDestacados() {
 
   return (
     <>
-      <section id="Servicios" class="container-servicios" data-aos="fade-right">
-        <article class="articulo-servicios">
-          <h1 class="title-servicios-precio">Mis Servicios</h1>
-          <p class="parrafo-servicio-precio">
+      <section
+        id="Servicios"
+        className="container-servicios"
+        data-aos="fade-right"
+      >
+        <article className="articulo-servicios">
+          <h1 className="title-servicios-precio">Mis Servicios</h1>
+          <p className="parrafo-servicio-precio">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, quis
             totam expedita saepe similique quisquam dignissimos nam placeat
             velit! Cum!
           </p>
         </article>
-        <div class="div-container-image">
+        <div className="div-container-image">
           <img
             src="./Precios.jpeg"
             alt="Precios-Servicios"
-            class="imagen-precios"
+            className="imagen-precios"
           />
         </div>
       </section>

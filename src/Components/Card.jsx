@@ -46,11 +46,11 @@ function Card() {
       {cartas.map(({ title, id, content, image }) => {
         return (
           <section key={id} class="contenedor">
-            <div class="card diplay-flex">
+            <div className="card diplay-flex">
               <img src={image} alt="" />
-              <div class="card-body">
+              <div className="card-body">
                 <h1>{title}</h1>
-                <p class="card-text">{content}</p>
+                <p className="card-text">{content}</p>
               </div>
             </div>
           </section>
