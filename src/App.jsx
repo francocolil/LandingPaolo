@@ -9,21 +9,23 @@ import ImagenFixed2 from "./Components/ImagenFixed2";
 import Image from "./Components/Image";
 import Redes from "./Components/Redes";
 import Contacto from "./Components/Contacto";
+import { FondoAnimado } from "./Components/FondoAnimado";
 
 function Home() {
   return (
     <>
+      <FondoAnimado />
       <BotonFixed />
 
       <Cabecera />
 
       <Video />
 
-      <ServiciosDestacados />
+      <Presentacion />
 
       <ImagenFixed />
 
-      <Presentacion />
+      <ServiciosDestacados />
 
       <ContainerCard />
 

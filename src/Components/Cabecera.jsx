@@ -1,5 +1,3 @@
-import "./Cabecera.css";
-
 import { useState } from "react";
 import "./Cabecera.css";
 
@@ -20,9 +18,10 @@ const Cabecera = () => {
   return (
     <header className="Cabecera">
       <h1 className="Cabecera-h1">
-        <a href="#" className="Cabecera-a">
+        <img className="imagen-ssl" src="./public/Logo.jpeg" alt="ICONO" />
+        {/* <a href="#" className="Cabecera-a">
           Paolo Style
-        </a>
+        </a> */}
       </h1>
 
       <button onClick={toggleMenu} className="Cabecera-button">

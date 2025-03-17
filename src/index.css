@@ -20,16 +20,8 @@ body {
   margin: 0;
   min-height: 100vh;
   font-size: 100%;
-  /* font-family: "Merienda", serif; */
   font-family: "Cormorant", serif;
 }
-
-/* Evitamos problemas con los SVG */
-/* svg {
-  width: 100%;
-  display: block;
-  fill: currentColor;
-} */
 
 /* Reseteamos las tablas */
 table,
@@ -98,9 +90,9 @@ figure {
 }
 
 .main-footer {
-  margin-top: 2rem;
+  margin-top: 3rem;
   height: 7rem;
-  background-color: black;
+  /* background-color: black; */
   height: auto;
   width: 100%;
 }
@@ -114,13 +106,15 @@ figure {
 }
 
 .imagen-ssl {
-  width: 1rem;
-  height: 1rem;
+  width: 11rem;
+  height: 3rem;
 }
 
 .h1-footer {
   color: white;
   font-size: 1.2em;
+  padding-bottom: 0;
+  padding-top: 0.5rem;
 }
 
 .h2-footer {

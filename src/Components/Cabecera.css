@@ -9,6 +9,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.imagen-ssl {
+  width: 25rem;
+  height: 3rem;
+}
+
 .Cabecera-h1 {
   font-size: 1.5em;
   color: black;
@@ -18,7 +24,18 @@
 .Cabecera-a {
   font-size: 1.3em;
   color: black;
+  text-decoration: none;
+  background-image: linear-gradient(to right, currentColor 0%, currentColor 0%);
+  background-repeat: no-repeat;
+  background-size: 0% 0.1em;
+  background-position: bottom left;
+  transition: background-size 0.3s ease;
 }
+
+.Cabecera-a:hover {
+  background-size: 100% 0.1em;
+}
+
 .Cabecera-button {
   display: none;
   cursor: pointer;
@@ -44,9 +61,12 @@
 
 @media screen and (max-width: 480px) {
   .Cabecera-h1 {
-    font-size: 1.5em;
-    color: black;
-    padding-left: 0;
+    padding-left: 5.5rem;
+  }
+
+  .imagen-ssl {
+    width: 11rem;
+    height: 3rem;
   }
 
   .Cabecera-ul {

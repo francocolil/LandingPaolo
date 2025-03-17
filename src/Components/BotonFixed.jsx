@@ -1,8 +1,27 @@
 import "./BotonFixed.css";
+import { useState, useEffect } from "react";
 
 function BotonFixed() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 600) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="boton-fixed">
+    <div className={`boton-fixed ${isVisible ? "visible" : ""}`}>
       <a href="#Navbar">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -1,4 +1,4 @@
-.boton-fixed {
+/* .boton-fixed {
   position: fixed;
   bottom: 5rem;
   right: 5rem;
@@ -13,11 +13,28 @@
   width: 2.1em;
   height: 2.1em;
   line-height: 2.1;
+} */
+
+.boton-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #dfb890;
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
 }
 
-svg {
-  color: #fff;
-  background-color: #fffaf0;
+.boton-fixed.visible {
+  opacity: 1;
+}
+
+.boton-fixed svg {
+  color: white;
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 700px) {
@@ -25,7 +42,7 @@ svg {
     position: fixed;
     /* bottom: 0; */
     bottom: 3rem;
-    right: 3rem;
+    right: 1rem;
     background-color: #cecdce;
     z-index: 100;
   }

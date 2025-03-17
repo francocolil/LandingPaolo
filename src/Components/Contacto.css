@@ -24,7 +24,8 @@ p {
 }
 
 .info-form {
-  padding-top: 1rem;
+  padding-top: 5rem;
+  padding-left: 5rem;
 }
 
 .container-form h2 {
@@ -164,6 +165,8 @@ form {
 
   .info-form {
     margin-top: 1rem;
+    margin-right: 1rem;
+    padding-right: 4rem;
   }
 
   form {

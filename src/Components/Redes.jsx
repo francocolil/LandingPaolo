@@ -1,8 +1,27 @@
+import React, { useState, useEffect } from "react";
 import "./Redes.css";
 
 function Redes() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 400) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div class="social">
+    <div className={`social redes ${isVisible ? "visible" : ""}`}>
       <ul>
         <li>
           <a

@@ -6,6 +6,7 @@ import {
   faCircleChevronRight,
   faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
+import FadeContent from "../../Reactbits/FadeContent/FadeContent";
 
 import "./wsp-gallery.css";
 import "./Galeria.css";
@@ -67,13 +68,21 @@ function WSPGallery({ galleryImages }) {
           {galleryImages &&
             galleryImages.map((slide, index) => {
               return (
-                <div
-                  className="single"
-                  key={index}
-                  onClick={() => handleOpenModal(index)}
+                <FadeContent
+                  blur={true}
+                  duration={800}
+                  delay={200}
+                  easing="ease-out"
+                  initialOpacity={0}
                 >
-                  <img className="imagenes" src={slide.img} alt="" />
-                </div>
+                  <div
+                    className="single"
+                    key={index}
+                    onClick={() => handleOpenModal(index)}
+                  >
+                    <img className="imagenes" src={slide.img} alt="" />
+                  </div>
+                </FadeContent>
               );
             })}
         </article>
